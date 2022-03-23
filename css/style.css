@@ -177,6 +177,12 @@ button {
   text-transform: uppercase;
 }
 
+#form {
+  background-color: rgb(253, 10, 30, 0.2);
+  padding: 3% 3%;
+  margin: 10px 0;
+}
+
 #form h2 {
   padding-bottom: 0.5em;
 }
