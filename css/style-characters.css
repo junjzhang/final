@@ -1,3 +1,16 @@
-.gallery-item {
-    width: 250px;
+.gallery img {
+  width: 50%;
+}
+#characters {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+  row-gap: 15px;
+}
+
+#cast img {
+  width: 60%;
+}
+
+#cast {
+  margin-bottom: 20px;
 }

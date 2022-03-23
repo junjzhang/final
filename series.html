@@ -39,8 +39,10 @@
         <!--FIXME: ALT-->
         <article>
             <h2>The original TV series</h2>
-            <img class="gallery-item" src="images/poster-tv.jpg" alt="Poster of the origianl tv
+            <div class='gallery-item'>
+                <img src="images/poster-tv.jpg" alt="Poster of the origianl tv
                     series" />
+            </div>
             <p>After the "Second Impact", a catastrophe that struck the
                 world, the world is rebuilt on top of the ruins.
                 14-year-old Shinji is called by his father, Anchor Wataru,
@@ -75,8 +77,10 @@
 
         <article>
             <h2>The remade version of TV series</h2>
-            <img class="gallery-item" src="images/poster-tv-remake.jpg" alt="Poster of the remade
+            <div class="gallery-item">
+                <img src="images/poster-tv-remake.jpg" alt="Poster of the remade
                     tv series" />
+            </div>
             <p>A remade version of the original TV series. It is to
                 celebrate the tenth anniversary of EVA enterprise
                 and
@@ -89,8 +93,10 @@
 
         <article>
             <h2>Death and Rebirth</h2>
-            <img class="gallery-item" src="images/poster-death-a-rebirth.jpg" alt="Poster of the
+            <div class="gallery-item">
+                <img src="images/poster-death-a-rebirth.jpg" alt="Poster of the
                     movie Death & Rebirth" />
+            </div>
             <p>The first part of the old movie version. It is divided into
                 two parts: "DEATH" and "REBIRTH". "DEATH" is
                 based on the content of the first to the 24th episodes of
@@ -114,8 +120,10 @@
 
         <article>
             <h2>Love is Destructive</h2>
-            <img class="gallery-item" src="images/poster-love-is-destructive.jpg" alt="Poster of
+            <div class="gallery-item">
+                <img src="images/poster-love-is-destructive.jpg" alt="Poster of
                     the movie Love is Destructive" />
+            </div>
             <p>
                 The second part of the old movie version. The mysterious pilot of EVA Rei Ayanami, arrives at the red
                 pool of the central dogma at the bottom of
@@ -132,8 +140,10 @@
         <article>
             <h2>
                 Revival of Evangelion.</h2>
-            <img class="gallery-item" src="images/poster-revival-of-evangelion.jpg" alt="Poster
-                    of the movie Revival of Evangelion" />
+            <div class="gallery-item">
+                <img src="images/poster-revival-of-evangelion.jpg" alt="Poster of
+                    the movie Revival of Evangelion" />
+            </div>
             <p>
                 The Re-edited version of old theatrical version movies. It contains the content of the first part and
                 the second part of the old movie version.
@@ -142,8 +152,10 @@
 
         <article>
             <h2>Begining</h2>
-            <img class="gallery-item" src="images/poster-begining.jpg" alt="Poster of the movie
+            <div class="gallery-item">
+                <img src="images/poster-begining.jpg" alt="Poster of the movie
                     Begining" />
+            </div>
             <p>
                 The fisrt movie of new theatrical version Evangelion. The new theatrical version reboots the entire
                 story.
@@ -177,8 +189,10 @@
 
         <article>
             <h2>Breaking</h2>
-            <img class="gallery-item" src="images/poster-breaking.jpg" alt="Poster of the movie
+            <div class="gallery-item">
+                <img src="images/poster-breaking.jpg" alt="Poster of the movie
                     Breaking" />
+            </div>
             <p>
                 The second movie of new theatrical version Evangelion. On the way back from visiting his mother's grave,
                 Shinji and Misato Katsuragi are attacked by the Seventh Apostle, and at the critical moment, the No. 2
@@ -193,7 +207,9 @@
 
         <article>
             <h2>Q</h2>
-            <img class="gallery-item" src="images/poster-q.jpg" alt="Poster of the movie Q" />
+            <div class="gallery-item">
+                <img src="images/poster-q.jpg" alt="Poster of the movie Q" />
+            </div>
             <p>
                 The third movie of new theatrical version Evangelion. Fourteen years ago, the awakening of the first
                 unit of the suspected deification brought about the
@@ -211,11 +227,14 @@
 
         <article>
             <h2>Final</h2>
-            <img class="gallery-item" src="images/poster-final.jpg" alt="Poster of the movie
+            <div class="gallery-item">
+                <img src="images/poster-final.jpg" alt="Poster of the movie
                     Final" />
+            </div>
             <p>
                 My favorite one. The fourth movie of new theatrical version
-                Evangelion. Shinji, who became the culprit of the "Third Impact", is depressed all day long. How can he
+                Evangelion. Shinji, who became the culprit of the "Third Impact", is depressed all day long. How can
+                he
                 recover from the sadness and save the world.
             </p>
         </article>
@@ -228,6 +247,26 @@
             <li><i class="fa-solid fa-envelope"></i><a href="mailto: junj.jay.zhang@gmail.com">Email:
                     junj.jay.zhang@gmail.com</a></li>
         </ul>
+        <section id='form'>
+            <h2>Leave a comment</h2>
+            <!-- modify this form HTML and place wherever you want your form -->
+            <form action="https://formspree.io/f/xqknljgv" method="POST">
+                <label for='form-id'>
+                    Your name (nick name):
+                </label><br>
+                <input type="text" name="name" id="form-id"><br>
+                <label for='form-email'>
+                    Your email:
+                </label><br>
+                <input type="email" name="email" id='form-email'><br>
+                <label for="form-comment">
+                    Your comment:
+                </label><br>
+                <textarea name="message" id="form-comment"></textarea><br>
+                <!-- your other form fields go here -->
+                <button type="submit">Send</button>
+            </form>
+        </section>
     </footer>
 </body>
 

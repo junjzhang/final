@@ -63,6 +63,26 @@
             <li><i class="fa-solid fa-envelope"></i><a href="mailto: junj.jay.zhang@gmail.com">Email:
                     junj.jay.zhang@gmail.com</a></li>
         </ul>
+        <section id='form'>
+            <h2>Leave a comment</h2>
+            <!-- modify this form HTML and place wherever you want your form -->
+            <form action="https://formspree.io/f/xqknljgv" method="POST">
+                <label for='form-id'>
+                    Your name (nick name):
+                </label><br>
+                <input type="text" name="name" id="form-id"><br>
+                <label for='form-email'>
+                    Your email:
+                </label><br>
+                <input type="email" name="email" id='form-email'><br>
+                <label for="form-comment">
+                    Your comment:
+                </label><br>
+                <textarea name="message" id="form-comment"></textarea><br>
+                <!-- your other form fields go here -->
+                <button type="submit">Send</button>
+            </form>
+        </section>
     </footer>
 </body>
 

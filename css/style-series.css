@@ -1,3 +1,8 @@
-.gallery-item {
-    width: 400px;
+.gallery img {
+  width: 80%;
+}
+main {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  row-gap: 15px;
 }
