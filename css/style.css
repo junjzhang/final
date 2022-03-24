@@ -124,14 +124,25 @@ nav .selected {
   }
 }
 
+@keyframes blink {
+  0% {
+    color: var(--eva-red);
+  }
+  50% {
+    color: var(--eva-b-orange);
+  }
+  100% {
+    color: black;
+  }
+}
+
 h1 {
   font-size: 1.5em;
   line-height: 1.5em;
   text-align: center;
   padding: 1em 0.2em;
   color: black;
-  animation-duration: 2s;
-  animation-name: fade-in;
+  animation: fade-in 1s, blink 2s infinite;
 }
 
 footer {
@@ -242,4 +253,10 @@ textarea {
   background: rgba(0, 0, 0, 0);
   color: var(--eva-b-orange);
   border-radius: 0;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  h1 {
+    animation: none;
+  }
 }
