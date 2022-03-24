@@ -25,6 +25,13 @@
     rgba(0, 0, 0, 0) 0
   );
 }
+
+#skip {
+  position: absolute;
+  top: -200px;
+  left: -200px;
+}
+
 body {
   background-color: var(--eva-bg-red);
 }
@@ -56,6 +63,10 @@ body {
 
 .gallery-item ~ .gallery-item-p-active {
   display: block;
+}
+
+article:nth-child(2n) .gallery-item img {
+  border-color: var(--eva-red);
 }
 
 header {
@@ -104,12 +115,23 @@ nav .selected {
   background-size: 25.9px 25.9px;
 }
 
+@keyframes fade-in {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
 h1 {
   font-size: 1.5em;
   line-height: 1.5em;
   text-align: center;
   padding: 1em 0.2em;
   color: black;
+  animation-duration: 2s;
+  animation-name: fade-in;
 }
 
 footer {
@@ -119,7 +141,7 @@ footer {
 
 h2 {
   font-family: matisse-pro-eb, fot-matisse-pron, sans-serif;
-  font-size: 1.3em;
+  font-size: 1.1em;
   padding: 0.3em 0;
   text-transform: capitalize;
   transform: scaleX(0.8);
