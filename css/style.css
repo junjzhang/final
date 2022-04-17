@@ -48,13 +48,16 @@ body {
 }
 
 .gallery-item-active {
+  transition: background 0.5s ease-in-out;
   background: url(../images/bg.jpg) center;
 }
 
 .gallery-item .gallery-item-img-active {
   border: none;
   padding: 11px;
+  animation: none !important;
 }
+
 
 .gallery-item ~ p {
   margin: 0.5em 5%;
@@ -62,6 +65,7 @@ body {
 }
 
 .gallery-item ~ .gallery-item-p-active {
+  animation: 0.5s fade-in;
   display: block;
 }
 
@@ -133,6 +137,21 @@ nav .selected {
   }
   100% {
     color: black;
+  }
+}
+
+@keyframes border-zoom {
+  0% {
+    padding: 8px;
+    border-width: 3px;
+  }
+  50% {
+    padding: 0px;
+    border-width: 11px;
+  }
+  100% {
+    padding: 8px;
+    border-width: 3px;
   }
 }
 
@@ -255,8 +274,19 @@ textarea {
   border-radius: 0;
 }
 
+touched {
+  animation: border-zoom infinite 2s;
+}
+
 @media (prefers-reduced-motion: reduce) {
-  h1 {
-    animation: none;
+  * {
+    animation: none !important;
+    transition: none !important;
+  }
+}
+
+@media only screen and (min-width: 700px) {
+  .gallery-item img:hover {
+    animation: border-zoom infinite 2s;
   }
 }

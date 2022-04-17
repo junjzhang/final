@@ -14,3 +14,9 @@
 #cast {
   margin-bottom: 20px;
 }
+
+@media (min-width: 700px) {
+  #cast img {
+    width: 40%;
+  }
+}

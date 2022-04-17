@@ -4,14 +4,17 @@
 <head>
     <title>EVA - My Thoughts</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="icon" href="images/eva-logo.jpg">
+    <link rel="icon" href="images/EVA-logo.jpg">
     <link rel="stylesheet" href="css/html5reset.css">
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/style-thoughts.css">
-    <script src="scripts/font.js"></script>
+    <link rel="stylesheet" href="css/effect.css">
     <script src="https://kit.fontawesome.com/6a5d94e47b.js" crossorigin="anonymous"></script>
     <!-- Global site tag (gtag.js) - Google Analytics -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-H8D2VV52BD"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="scripts/set_up.js"></script>
+    <script defer src="scripts/effect.js"></script>
     <script>
         window.dataLayer = window.dataLayer || [];
         function gtag() { dataLayer.push(arguments); }
@@ -19,27 +22,20 @@
         gtag('config', 'G-H8D2VV52BD');
     </script>
 </head>
+<div class="mouse-cursor cursor-outer"></div>
+<div class="mouse-cursor cursor-inner"></div>
 
 <body>
     <header>
-        <a id="skip" href="#main">Skip to Main Content</a>
-        <nav>
-            <ul>
-                <li> <a href="index.html">Introduction</a></li>
-                <li> <a href="series.html">Series</a></li>
-                <li> <a href="characters.html">Characters</a></li>
-                <li class='selected'> <a href="thoughts.html">Thoughts</a></li>
-            </ul>
-        </nav>
+        <div id="nav"></div>
         <h1>My thoughts regarding the Evangelion</h1>
     </header>
     <main id='main'>
-        <!--TODO: Fill in more content-->
-        <!--FIXME: ALT-->
         <section>
-            <p>I first watched EVA when I was a middle school student. At that time adolescence I saw the same teenage
+            <p>I first watched EVA when I was a middle school student. I was shocked since I never wathched any work
+                that is so dark but touch the bottle of my heart. At that time adolescence I saw the same teenage
                 protagonists confusion and growth is very much the same feeling.</p>
-            <p>I grew up, but eva's new work was difficult to produce for various reasons. Last year, the last one was
+            <p>I grew up, but EVA's new work was difficult to produce for various reasons. Last year, the last one was
                 finally released, and I couldn't help but cry when I saw the people in the show reconciled with
                 themselves
                 and returned to real life.</p>
@@ -56,34 +52,7 @@
             <p>I have grown up. Goodbye, my youth. Goodbye, all the Evangelions.</p>
         </section>
     </main>
-    <footer>
-        <p>A mini introduction to my favorite anime series, Evangelion.</p>
-        <p>By Junjie Zhang</p>
-        <ul>
-            <li><i class="fa-solid fa-envelope"></i><a href="mailto:junj.jay.zhang@gmail.com">Email:
-                    junj.jay.zhang@gmail.com</a></li>
-        </ul>
-        <section id='form'>
-            <h2>Leave a comment</h2>
-            <!-- modify this form HTML and place wherever you want your form -->
-            <form action="https://formspree.io/f/xqknljgv" method="POST">
-                <label for='form-id'>
-                    Your name (nick name):
-                </label><br>
-                <input type="text" name="name" id="form-id"><br>
-                <label for='form-email'>
-                    Your email:
-                </label><br>
-                <input type="email" name="email" id='form-email'><br>
-                <label for="form-comment">
-                    Your comment:
-                </label><br>
-                <textarea name="message" id="form-comment"></textarea><br>
-                <!-- your other form fields go here -->
-                <button type="submit">Send</button>
-            </form>
-        </section>
-    </footer>
+    <footer></footer>
 </body>
 
 </html>
