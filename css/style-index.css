@@ -3,3 +3,10 @@ img {
   padding: 9px;
   margin: 10px auto;
 }
+
+@media (prefers-reduced-motion: reduce) {
+  * {
+    animation: none !important;
+    transition: none !important;
+  }
+}

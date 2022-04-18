@@ -94,13 +94,14 @@ nav {
 }
 
 nav ul {
-  display: flex;
-  flex-flow: row wrap;
-  justify-content: space-between;
+  display: grid;
+  justify-items: center;
+  justify-items: center;
+  grid-template-columns: 1fr;
 }
 
 nav li {
-  justify-items: center;
+  grid-column: span 1;
   padding: 4px 4px;
   margin: 0.3em 0 0.3em;
   padding: 0.3em 0 0.3em;
@@ -115,6 +116,7 @@ nav a {
 
 nav .selected {
   font-weight: 700;
+  font-size: 1.2em;
   background: var(--eva-red-stripe);
   background-size: 25.9px 25.9px;
 }
@@ -274,8 +276,8 @@ textarea {
   border-radius: 0;
 }
 
-touched {
-  animation: border-zoom infinite 2s;
+main p:last-child{
+  padding-bottom: 30px;
 }
 
 @media (prefers-reduced-motion: reduce) {
@@ -285,12 +287,41 @@ touched {
   }
 }
 
-@media only screen and (min-width: 700px) {
+@media only screen and (min-width: 500px) {
+  nav ul {
+    grid-template-columns: 1fr 1fr;
+  }
+  main p {
+    margin: 0 8%;
+    line-height: 1.75em;
+  }
+  button {
+    font-size: 1.2em;
+    margin: 0.2em 0;
+  }
+  main p:last-child{
+    padding-bottom: 8%;
+  }
+}
+
+@media only screen and (min-width: 900px) {
   .gallery-item img:hover {
     animation: border-zoom infinite 2s;
   }
-  p {
-    margin: 0 10%;
+  main p {
+    margin: 0 12%;
     line-height: 1.75em;
+  }
+  footer{
+    padding: 20px 12%;
+  }
+  main p:last-child{
+    padding-bottom: 12%;
+  }
+}
+
+@media only screen and (min-width: 900px){
+  nav ul {
+    grid-template-columns: repeat(4, 1fr);
   }
 }
