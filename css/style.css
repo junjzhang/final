@@ -289,4 +289,8 @@ touched {
   .gallery-item img:hover {
     animation: border-zoom infinite 2s;
   }
+  p {
+    margin: 0 10%;
+    line-height: 1.75em;
+  }
 }

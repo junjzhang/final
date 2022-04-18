@@ -2,9 +2,9 @@
   width: 50%;
 }
 #characters {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
-  row-gap: 15px;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-around;
 }
 
 #cast img {
